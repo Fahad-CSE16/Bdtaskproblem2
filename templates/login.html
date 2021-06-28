@@ -1,0 +1,5 @@
+{% extends 'basic.html' %}
+{% block body %}
+{% load socialaccount %}
+<button class="btn pt-2 mt-2 " style="color:white; background:red; " > <a href=" {% provider_login_url 'google' %} " style="color:white; background:red; "> <i class="fab fa-google"></i> Login With Google</a></button>
+{% endblock body %}
